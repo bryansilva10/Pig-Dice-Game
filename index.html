@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,600" rel="stylesheet" type="text/css">
+        <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
+        <link type="text/css" rel="stylesheet" href="style.css">
+        <link rel="icon" href="dice-icon.ico">
+        <title>Pig | Dice Game</title>
+    </head>
+
+    <body>
+      <h1 class="main-title"><strong>Rules:</strong></h1>
+      <div class="header">
+
+        <ul>
+          <li>The game has 2 players, playing in rounds</li>
+          <li>In each turn, a player rolls a dice as many times as he whishes. Each result get added to his ROUND score</li>
+          <li>BUT, if the player rolls a 1, all his ROUND score gets lost. After that, it's the next player's turn</li>
+          <li>The player can choose to 'Hold', which means that his ROUND score gets added to his GLOBAL score. After that, it's the next player's turn</li>
+          <li>Begin by entering the winning score below, the first player to reach those points on the GLOBAL score wins the game</li>
+        </ul>
+
+      </div>
+        <div class="wrapper clearfix">
+            <div class="player-0-panel active">
+                <div class="player-name" id="name-0">Player 1</div>
+                <div class="player-score" id="score-0">43</div>
+                <div class="player-current-box">
+                    <div class="player-current-label">Current</div>
+                    <div class="player-current-score" id="current-0">11</div>
+                </div>
+            </div>
+
+            <div class="player-1-panel">
+                <div class="player-name" id="name-1">Player 2</div>
+                <div class="player-score" id="score-1">72</div>
+                <div class="player-current-box">
+                    <div class="player-current-label">Current</div>
+                    <div class="player-current-score" id="current-1">0</div>
+                </div>
+            </div>
+
+            <button class="btn-new"><i class="ion-ios-plus-outline"></i>New game</button>
+            <button class="btn-roll"><i class="ion-ios-loop"></i>Roll dice</button>
+            <button class="btn-hold"><i class="ion-ios-download-outline"></i>Hold</button>
+
+            <img src="dice-5.png" alt="Dice" class="dice">
+        </div>
+
+        <input type="text" placeholder="Enter Winning Score" class="final-score">
+
+        <div class="footer">
+          <a class="footer-link" href="https://www.linkedin.com/in/bryanguill%C3%A9n/">LinkedIn</a>
+          <a class="footer-link" href="https://github.com/bryansilva10">GitHub</a>
+          <p class="copyright">© 2019 Bryan Guillen.</p>
+        </div>
+
+        <script src="app.js"></script>
+    </body>
+</html>
